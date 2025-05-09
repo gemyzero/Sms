@@ -1,0 +1,49 @@
+.banner {
+    background: linear-gradient(rgba(53, 69, 11, 0.564), rgba(1, 1, 0, 0.975)), url('../../../public/images/banner.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.banner h1{
+    font-size: 50px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+.app-banner{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+
+}
+.app-banner img{
+
+    border: 3px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 30px;
+}
+@media screen and (max-width: 700px) {
+
+    .app-banner{
+    display: block;
+        text-align: center;
+    
+    }
+
+    .banner h1{
+        font-size: 30px;
+        width: 100%;
+
+    }
+}
+.app-banner img:hover{
+
+}

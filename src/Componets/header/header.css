@@ -1,0 +1,101 @@
+.c{
+overflow: hidden;
+}
+.header {
+    background: url('../../../public/images/hero.jpg');
+
+    background: linear-gradient(rgba(5, 5, 57, 0.5), rgba(11, 11, 11, 0.5)), url('../../../public/images/hero.jpg');
+    width: 100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.header  .container{
+    background-color: #2c2927;
+
+}
+
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed         ;
+    top:0 ;
+    width: 100%;
+padding-right: 80px;
+
+}
+.nav h1{
+color: gold;
+letter-spacing: 1px;
+margin-left: 100px;
+line-height: 1.2;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+font-size: 50px;
+}
+.nav button{
+    line-height: 1.2;
+
+    font-size: 17px;
+    color: aliceblue;
+    background-color: goldenrod;
+    
+}
+.header .hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .hero h1{
+  width: 70%;   
+margin-bottom: 70px;
+  text-align: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+}
+.hero a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+padding-top: 110px;
+
+}
+.hero a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+    
+}
+
+.hero a span{
+    color: gold;
+}
+.nav img{
+    width: 200px;
+}
+@media screen and (max-width: 700px) {
+    .nav h1{
+    font-size: 40px;
+    text-align: center;
+    }
+    .header .hero h1{
+        font-size: 40px;
+
+    }
+    .nav button{
+        font-size: 17px;
+        color: aliceblue;
+        background-color: goldenrod;
+        width: 100%;
+    }
+    .nav{
+        padding-right: 0px;
+
+    }
+}
