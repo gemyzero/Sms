@@ -8,12 +8,21 @@ font-size: 25px;
 .log{
     display: flex;
 }
+.captcha{
 
+    margin-top: 15px;
+    margin-right: 5px;
+    text-align: center;
+}
 @media screen and (max-width: 530px) {
     .log{
         display: inline;
 
     }
 
-
+.captcha{
+    position: relative;
+    left: 45px;
+    margin-top: 15px;
+}
 }
