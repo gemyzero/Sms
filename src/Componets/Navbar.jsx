@@ -21,10 +21,10 @@ export default function Navbar() {
   console.log(scrollY)
 
   return (
-    <div className={`     w-100 nav  ${scrollY == 0 ? '' : 'bg-white'}`}>
-    <button className='btn     '> <span className='me-2'>  ابداء الان </span>       <span className='icon'><BsFillSendPlusFill /></span>
+    <div className={`      nav  ${scrollY == 0 ? '' : 'bg-white'}`}>
+    <button className='btn '> <span className='me-2'>  ابداء الان </span>       <span className='icon'><BsFillSendPlusFill /></span>
     </button>
-      <div className='  '><h1 >seeend</h1></div>
+      <div className='logo'><h1 >seeend</h1></div>
    
       
     </div>

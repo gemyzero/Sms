@@ -7,7 +7,6 @@ const Inputname = useRef();
 const InputArea = useRef();
 const [sendMassage , setSendMassage] = useState([])
 
-
 const HandelSubmit =(event)=>{
   event.preventDefault()
   let mass = {
@@ -15,12 +14,10 @@ const HandelSubmit =(event)=>{
     name: Inputname.current.value,
     massage :InputArea.current.value,
   }
- 
   const newOpj = [...sendMassage]
   newOpj.push(mass)
   setSendMassage(newOpj)
   console.log(newOpj)
-
   localStorage.setItem('massage' , JSON.stringify(newOpj))
 }
 
@@ -52,12 +49,12 @@ const HandelSubmit =(event)=>{
 </div>
 
 <form onSubmit={HandelSubmit} action="" className="form-contact w-75 mx-auto">
- <div className="log d-flex">
+ <div className="log ">
   <input ref={InputPhone} type="text" id="disabledTextInput" className="form-control mx-2 my-3 py-2" placeholder=" الرجاء ادخال رقم الهاتف "/>
   <input ref={Inputname} type="text" id="disabledTextInput" className="form-control mx-2 my-3 py-2" placeholder=" الرجاء ادخال  اسمك"/>
  </div>
- <textarea ref={InputArea} className="form-control " id="exampleFormControlTextarea1 my-3 py-2" placeholder="الرجاء ادخال الرساله" rows="3"/>
-<button className="btn btn-warning  p-2  fw-bold text-white w-100">ارسال</button>
+ <textarea ref={InputArea} className="form-control me-2" id="exampleFormControlTextarea1 my-3 py-2" placeholder="الرجاء ادخال الرساله" rows="3"/>
+<button className="btn btn-warning me-2  p-2  fw-bold text-white w-100">ارسال</button>
 </form>
 </section>    
 
