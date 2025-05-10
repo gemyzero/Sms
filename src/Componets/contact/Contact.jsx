@@ -76,7 +76,7 @@ export default function Contact() {
         <textarea ref={InputArea} className="form-control me-2" id="exampleFormControlTextarea1 my-3 py-2" placeholder="الرجاء ادخال الرساله" rows="3" />
         <ReCAPTCHA
           className='captcha'
-          sitekey="6Lds9jQrAAAAAKlBVfo61wpk_sfTMLV5gfLOrVJ4"
+          sitekey="6LdvATUrAAAAAISTkq2K1lgClbTVKVUOZVeuL1hP"
           onChange={onChange}
         />
 
