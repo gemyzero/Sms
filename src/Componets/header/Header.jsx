@@ -13,7 +13,7 @@ export default function Header() {
  <div className='hero w-100'>
 <div className='text-center'>
 <h1 className='mx-auto'>دمج واجهة برمجة تطبيقات Easy Send SMS</h1>
-<a href="#"> اكتشف كيف! <span><BsArrowDown /></span>  </a>
+<a href="#about"> اكتشف كيف! <span><BsArrowDown /></span>  </a>
 </div>
 
 

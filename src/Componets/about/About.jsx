@@ -3,7 +3,7 @@ import about from '../../../public/images/about.png'
 import './about.css'
 export default function About() {
   return (
-    <div className='about py-5'>
+    <div className='about py-5' id='about'>
       <div className="row  mx-auto py-5">
       <div className="col-lg-6 info-about">
 <h1>معلومات عنا</h1>

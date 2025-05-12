@@ -4,7 +4,7 @@ export default function Us() {
   return (
 <div className=" us  ">
 <div className='container '>
-        <h1 className='mb-4 mx-1 px-4'>استعن بنا</h1>
+        <h1 className='mb-4 mx-1 px-4 pt-5'>استعن بنا</h1>
       <div className="row">
         <div className="col-lg-4 p-3 px-lg-5  ">
             <h3 className='mb-3'>رسائل نصية قصيرة جماعية</h3>
