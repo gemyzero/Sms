@@ -9,6 +9,8 @@ import Benfits from './Componets/benfit/Benfits'
 import Banner from './Componets/banner/Banner'
 import Brand from './Componets/brand/Brand'
 import Contact from './Componets/contact/Contact'
+import How from './Componets/how/How'
+import Banneer from './Componets/banneer/Banneer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,10 +20,13 @@ function App() {
     <div style={{direction:"rtl" , overflow:'hidden'}}>
     <Header></Header>
     <Us></Us>
-    <About></About>
-    <Benfits></Benfits>
     <Banner></Banner>
+<How></How>
+<Banneer></Banneer>
+    <About></About>
     <Brand></Brand>
+
+    <Benfits></Benfits>
     <Contact></Contact>
     </div>
   )

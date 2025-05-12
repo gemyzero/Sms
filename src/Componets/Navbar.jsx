@@ -22,9 +22,9 @@ export default function Navbar() {
 
   return (
     <div className={`      nav  ${scrollY == 0 ? '' : 'bg-white'}`}>
-    <button className='btn '> <span className='me-2'>  ابداء الان </span>       <span className='icon'><BsFillSendPlusFill /></span>
+    <button className='btn btn-primary '> <span className='me-2'>  ابداء الان </span>       <span className='icon'><BsFillSendPlusFill /></span>
     </button>
-      <div className='logo'><h1 >seeend</h1></div>
+      <div className='logo text-primary'><h1 >seeend</h1></div>
    
       
     </div>

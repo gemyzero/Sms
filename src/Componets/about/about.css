@@ -1,16 +1,23 @@
 .about {
-    background-color: #FFC915;
+    background-color: whitesmoke;
 }
 .about .row{
     align-items: center;
-    width: 75%;
+    width: 90%;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.about .row h1{
+    font-size: 51px;
+    color: #0d6efd;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
 .info-about h5{
-    line-height: 1.5;
-
-    color: rgba(0, 0, 102, 0.499);
+    line-height: 2;
+font-size: 25px;
+    color: gray;
+    font-weight: bold;
 }
 @media screen and (max-width: 400px) {
     .about .row {

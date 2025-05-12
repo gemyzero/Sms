@@ -7,10 +7,10 @@ import visa from '../../../public/images/brand/visa.png'
 
 export default function Brand() {
   return (
-   <div className=""style={{backgroundColor:'#f2f1e5'}}>
+   <div className=""style={{backgroundColor:'white'}}>
      <div className='container py-5' >
-        <h1 className='text-center my-4'>طرق الدفع</h1>
-      <div className="row mt-1 g-5 " style={{justifyContent:'center'}}>
+        <h1 style={{fontFamily:'Courier New' , fontSize:'60px' , color:'#0d6efd'}} className='fw-bold  text-center my-4'>طرق الدفع</h1>
+      <div className="row pb-5 mt-1 g-5 " style={{justifyContent:'center'}}>
         <div className="col-lg-2 col-md-3 col-5">
 
             <img src={visa} alt="" />
