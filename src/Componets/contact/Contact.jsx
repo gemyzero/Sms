@@ -68,21 +68,21 @@ export default function Contact() {
 
       <div className="row mt-5 mb-0   text-center ms-auto d-flex justify-content-center">
         <div className="   info-contact col-lg-3 col-md-6   col-12"data-aos="fade-right">
-          <a href="#"><i className="fa-solid fa-paper-plane"><FaPaperPlane /></i></a>
+          <a href="https://maps.google.com/?cid=15366605247787472781"><i className="fa-solid fa-paper-plane"><FaPaperPlane /></i></a>
           <h2 className='py-2'>العنوان</h2>
           <p> 5 شارع أحمد شوقي، شارع جمال عبد الناصر - منطي - مركز قليوب - القليوبية</p>
         </div>
         <div className=" info-contact   col-lg-3 col-md-6   col-12"data-aos="fade-up ">
-          <a href="#"><i className="fa-solid fa-envelope"><FaEnvelope /></i></a>
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i className="fa-solid fa-envelope"><FaEnvelope /></i></a>
           <h2 className='py-2'>بريد إلكتروني</h2>
           <p>mohamed0110gemy@gmail.com</p>
         </div>
         <div className=" info-contact   col-lg-3 col-md-6   col-12"data-aos="fade-left">
-          <a href="#"><i className="fa-solid fa-phone"><FaPhone /></i></a>
+          <a href="tel:01013909816"><i className="fa-solid fa-phone"><FaPhone /></i></a>
           <h2 className='py-2'>هاتف رقم</h2>
           <p>01013909816</p>
         </div>
-      </div>
+        </div>
 
       <form onSubmit={HandelSubmit} action="" className="form-contact w-75 mx-auto">
         <div className="log ">

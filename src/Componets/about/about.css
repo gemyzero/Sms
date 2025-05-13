@@ -4,6 +4,7 @@
 .about .row{
     align-items: center;
     width: 90%;
+    padding: 100px 0;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -22,6 +23,11 @@ font-size: 25px;
 @media screen and (max-width: 400px) {
     .about .row {
     width: 90%;
+    padding: 0;
+    }
+    .about .row h1{
+        font-size: 31px;
+text-align: center;
     }
     
     }
