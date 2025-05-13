@@ -1,19 +1,28 @@
-import React from 'react'
-import './us.css'
+import React, { useEffect, useRef } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css';import './us.css'
 export default function Us() {
+    useEffect(() => {
+      Aos.init({
+        // اختيارات التهيئة (اختيارية)
+        duration: 1000, // مدة الحركة بالمللي ثانية
+        easing: 'ease-in-out', // نوع الحركة (ease, ease-in, ease-out, linear, الخ.)
+        once: false, // هل يتم تشغيل الحركة مرة واحدة فقط؟
+      });
+    }, []);
   return (
 <div className=" us   " >
 <div className='container-fluid '>
-        <h1 className='mb-4  text-center  pt-5'>استعن بنا</h1>
+        <h1 data-aos="zoom-out" className='mb-4  text-center  pt-5'>استعن بنا</h1>
       <div className="row py-5 gap-5 justify-content-center">
-        <div className="card col-lg-5 col-10 p-3 px-lg-5  ">
+        <div className="   card col-lg-5 col-10 p-3 px-lg-5  "data-aos="fade-left" >
            <div className=''>
            <h3 className='mb-3'>رسائل نصية قصيرة جماعية</h3>
            <h5>يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو  رسالة مخصصة إلى كل مستلم بناءً على قالب يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب  يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب</h5>
            </div>
         </div>
  
-        <div className="card col-lg-5 col-10 p-3 px-lg-5  ">
+        <div className="card col-lg-5 col-10 p-3 px-lg-5  "   data-aos="fade-right">
            <div className=''>
            <h3 className='mb-3'>رسائل نصية قصيرة جماعية</h3>
            <h5>يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو  رسالة مخصصة إلى كل مستلم بناءً على قالب يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب  يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب</h5>
@@ -22,15 +31,15 @@ export default function Us() {
         </div>
  
       </div>
-      <div className="row py-5 gap-5  justify-content-center"  >
-        <div className="card mx-3 col-lg-5 col-10 p-3 px-lg-5  ">
+      <div className="row py-5 gap-5 justify-content-center">
+        <div className="   card col-lg-5 col-10 p-3 px-lg-5  "data-aos="fade-left" >
            <div className=''>
            <h3 className='mb-3'>رسائل نصية قصيرة جماعية</h3>
            <h5>يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو  رسالة مخصصة إلى كل مستلم بناءً على قالب يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب  يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب</h5>
            </div>
         </div>
  
-        <div className="card col-lg-5 col-10 p-3 px-lg-5  ">
+        <div className="card col-lg-5 col-10 p-3 px-lg-5  "   data-aos="fade-right">
            <div className=''>
            <h3 className='mb-3'>رسائل نصية قصيرة جماعية</h3>
            <h5>يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو  رسالة مخصصة إلى كل مستلم بناءً على قالب يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب  يتيح لك إرسال رسالة عامة إلى جميع المستلمين أو رسالة مخصصة إلى كل مستلم بناءً على قالب</h5>

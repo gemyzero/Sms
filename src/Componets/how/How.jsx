@@ -21,7 +21,7 @@ export default function How() {
   return (
     <div className='container-fluid pt-5  how' style={{backgroundColor:'whitesmoke'}}>
    <div className="head-how text-center">
-   <h1>كيف يعمل</h1>
+   <h1 data-aos="zoom-out">كيف يعمل</h1>
    <p>مع منشئنا، هناك 3 خطوات بسيطة فقط لإنشاء تطبيق جوال
    </p>
    </div>

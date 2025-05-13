@@ -1,9 +1,25 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 import { FaEnvelope, FaPaperPlane, FaPhone } from 'react-icons/fa6';
 import './contact.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Contact() {
+
+    useEffect(() => {
+                Aos.init({
+                  // اختيارات التهيئة (اختيارية)
+                  duration: 1000, // مدة الحركة بالمللي ثانية
+                  easing: 'ease-in-out', // نوع الحركة (ease, ease-in, ease-out, linear, الخ.)
+                  once: false, // هل يتم تشغيل الحركة مرة واحدة فقط؟
+                });
+              }, []);
+
+
+
+
+
   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
   const InputPhone = useRef(null);
   const Inputname = useRef(null);
@@ -47,21 +63,21 @@ export default function Contact() {
   return (
     <section id="contact" className="contanier mt-5 ">
       <div className=" text-center">
-        <h1>اتصل بنا</h1>
+        <h1 data-aos="zoom-out">اتصل بنا</h1>
       </div>
 
       <div className="row mt-5 mb-0   text-center ms-auto d-flex justify-content-center">
-        <div className="   info-contact col-lg-3 col-md-6   col-12">
+        <div className="   info-contact col-lg-3 col-md-6   col-12"data-aos="fade-right">
           <a href="#"><i className="fa-solid fa-paper-plane"><FaPaperPlane /></i></a>
           <h2 className='py-2'>العنوان</h2>
           <p> 5 شارع أحمد شوقي، شارع جمال عبد الناصر - منطي - مركز قليوب - القليوبية</p>
         </div>
-        <div className=" info-contact   col-lg-3 col-md-6   col-12">
+        <div className=" info-contact   col-lg-3 col-md-6   col-12"data-aos="fade-up ">
           <a href="#"><i className="fa-solid fa-envelope"><FaEnvelope /></i></a>
           <h2 className='py-2'>بريد إلكتروني</h2>
           <p>mohamed0110gemy@gmail.com</p>
         </div>
-        <div className=" info-contact   col-lg-3 col-md-6   col-12">
+        <div className=" info-contact   col-lg-3 col-md-6   col-12"data-aos="fade-left">
           <a href="#"><i className="fa-solid fa-phone"><FaPhone /></i></a>
           <h2 className='py-2'>هاتف رقم</h2>
           <p>01013909816</p>
