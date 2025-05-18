@@ -4,6 +4,8 @@ import 'aos/dist/aos.css';
 import { FaEnvelope, FaPaperPlane, FaPhone } from 'react-icons/fa6';
 import './contact.css';
 import ReCAPTCHA from 'react-google-recaptcha';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 export default function Contact() {
 
@@ -16,21 +18,17 @@ export default function Contact() {
                 });
               }, []);
 
-
-
-
-
   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
   const InputPhone = useRef(null);
   const Inputname = useRef(null);
   const InputArea = useRef(null);
   const [sendMassage, setSendMassage] = useState([]);
-
+// Captcha
   const onChange = (value) => {
     console.log("Captcha value:", value);
     setIsCaptchaVerified(true);
   };
-
+  // contact
   const HandelSubmit = (event) => {
     event.preventDefault();
 
@@ -47,7 +45,7 @@ export default function Contact() {
     alert('الرجاء الضغط على الكابيتشا وإكمال التحقق.') ;
     }
 
-    
+
     let mass = {
       phone: InputPhone.current.value,
       name: Inputname.current.value,
@@ -60,8 +58,37 @@ export default function Contact() {
     localStorage.setItem('massage', JSON.stringify(newOpj));
   };
 
+
+    const InputEmail = useRef();
+
+    const handleSendEmail = async () => {
+         const email = InputEmail.current.value;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const emailTest =  emailRegex.test(email)
+
+ if (emailTest) {
+   await  axios.post('https://easetasks.com/mail/index.php/api/mail/send' , {
+      "email_to":email,
+      "email_subject": "Mail verfiaction",
+      "email_msg": `Welcome  ${email} youer cod is  please press on the link`}
+).then((res)=>{
+    Swal.fire({
+      title: "please check your email!",
+      icon: "success",
+      draggable: true
+    })
+  })
+ }else{
+Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: " your email wrong !",
+});
+ }
+}
   return (
-    <section id="contact" className="contanier mt-5 ">
+<div className="">
+      <section id="contact" className="contanier mt-5 ">
       <div className=" text-center">
         <h1 data-aos="zoom-out">اتصل بنا</h1>
       </div>
@@ -106,5 +133,35 @@ export default function Contact() {
         </button>
       </form>
     </section>
+
+{/* News Letter */}
+
+
+     <div className="pt-5 mt-5 news bg-dark">
+       <div className=" title-news text-center">
+        <h1 data-aos="zoom-out">  الرسائل الجديده</h1>
+      </div>
+
+
+        <div className="body-news mx-auto">
+                            <input ref={InputEmail} type="email" id="disabledTextInput" className="form-control py-3 mx-2 my-3 py-0" placeholder=" الرجاء ادخال البريد الالكتروني" />
+
+              <button
+            className="btn btn-primary me-2 w-50   p-2   fw-bold text-white "
+            type="submit"    
+            disabled={!isCaptchaVerified}                   
+                      onClick={handleSendEmail}
+
+          >
+            ارسال
+          </button>
+
+    
+        </div>
+     </div>
+    
+</div>
   );
 }
+
+            
