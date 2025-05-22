@@ -40,7 +40,10 @@ width: 50%;
     font-weight: bold;
 font-family: 'Courier New', Courier, monospace;
 }
-
+#contact .supmit button:hover{
+    background-color: black;
+    color: red;
+}
 @media screen and (max-width: 530px) {
     .log{
         display: inline;

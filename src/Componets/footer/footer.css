@@ -1,0 +1,39 @@
+.footer{
+}
+.footer img{
+width: 40%;
+}
+.footer .first h6{
+line-height: 1.7;
+    color: white;
+    margin-top: 15px;
+
+}
+.footer .second h1{
+    font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+font-size: 50px;
+}
+.footer .second h6{
+    color: white;
+    line-height: 1.7;
+    font-weight: bold;
+        font-size: 18px;
+
+
+}
+.third h1{
+    font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+font-size: 50px;
+}
+.third ul li a {
+    text-decoration: none;
+    line-height: 2;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+

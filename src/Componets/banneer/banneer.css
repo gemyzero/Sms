@@ -15,5 +15,7 @@
   }
   .banneer h1{
     font-size: 71px;
+        direction: rtl;
+
 
   }

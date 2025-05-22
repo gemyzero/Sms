@@ -6,8 +6,10 @@ import 'aos/dist/aos.css';
 import './banner.css'
 import play from '../../../public/images/play.png'
 import store from '../../../public/images/store.png'
-
+import { useTranslation } from 'react-i18next';
 export default function Banner() {
+        const {t} = useTranslation();
+
      useEffect(() => {
         Aos.init({
           // اختيارات التهيئة (اختيارية)
@@ -19,7 +21,7 @@ export default function Banner() {
   return (
     <div className='banner' data-aos="fade-down">
       <div>
-        <h1 data-aos="zoom-out" >قم بإدارة حسابك من هاتفك المحمول حان الوقت لاستخدام تطبيقات SMS الذكية.</h1>
+        <h1 data-aos="zoom-out" >{t('banner1 text')}</h1>
         <div className='app-banner'>   
             <img src={play} alt="" />
             <img src={store} alt="" />

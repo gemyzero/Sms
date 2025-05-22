@@ -6,10 +6,11 @@ import how5 from '../../../public/images/how/how5.png'
 import how4 from '../../../public/images/how/how4.png'
 import up from '../../../public/images/how/up.png'
 import signin from '../../../public/images/how/sign-in.png'
-
 import './how.css'
-
+import { useTranslation } from 'react-i18next';
 export default function How() {
+        const {t} = useTranslation();
+
     // useEffect(() => {
     //   Aos.init({
     //     // اختيارات التهيئة (اختيارية)
@@ -19,10 +20,10 @@ export default function How() {
     //   });
     // }, []);
   return (
-    <div className='container-fluid pt-5  how' style={{backgroundColor:'whitesmoke'}}>
+    <div id="How" className='container-fluid pt-5  how' style={{backgroundColor:'whitesmoke'}}>   
    <div className="head-how text-center">
-   <h1 data-aos="zoom-out">كيف يعمل</h1>
-   <p>مع منشئنا، هناك 3 خطوات بسيطة فقط لإنشاء تطبيق جوال
+   <h1 data-aos="zoom-out"> {t('how titile')}</h1>
+   <p>{t('how last titile')}
    </p>
    </div>
       <div className="row mx-auto mt-5 justify-content-center">

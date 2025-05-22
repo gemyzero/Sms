@@ -2,7 +2,12 @@ import React, { useEffect, useRef } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 import './banneer.css'
+import { useTranslation } from 'react-i18next';
+
 export default function Banneer() {
+          const {t} = useTranslation();
+
+
        useEffect(() => {
           Aos.init({
             // اختيارات التهيئة (اختيارية)
@@ -13,7 +18,7 @@ export default function Banneer() {
         }, []);
   return (
     <div className='banneer text-center' data-aos="fade-up">
-      <h1 data-aos="zoom-out" >Easy Send SMS</h1>
+      <h1 data-aos="zoom-out" >{t('banner2 text Easy Send SMS')}  </h1>
     </div>
   )
 }

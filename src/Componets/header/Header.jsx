@@ -5,9 +5,12 @@ import './header.css'
 import Navbar from '../Navbar'
 import { BsArrowDown } from 'react-icons/bs'
 import { Link } from 'react-scroll'
+import { useTranslation } from 'react-i18next';
 
 
 export default function Header() {
+    const {t} = useTranslation();
+  
   useEffect(() => {
     Aos.init({
       // اختيارات التهيئة (اختيارية)
@@ -36,13 +39,12 @@ export default function Header() {
 
  <div className='hero w-100'>
 <div className='text-center' data-aos="fade-down">
-<h1 className='mx-auto'>دمج واجهة برمجة تطبيقات Easy Send SMS</h1>
+<h1 className='mx-auto'> {t('header title')}   </h1>
 <Link
 className='fw-bold'
- onClick={scrollTo1000}
-  to=""
+  to="How"
 >
-  اكتشف كيف! <span><BsArrowDown /></span>
+  {t('header link Find out how')}! <span><BsArrowDown /></span>
 </Link>
 
 </div>
